@@ -13,5 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
         ((TextView)findViewById(R.id.model1)).setText(new Model1().getModelName());
         ((TextView)findViewById(R.id.model2)).setText(new Model2().getModelName());
+        ((TextView)findViewById(R.id.model3)).setText(new Model3().getModelName());
     }
 }

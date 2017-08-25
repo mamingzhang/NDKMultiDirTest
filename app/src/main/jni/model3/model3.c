@@ -33,7 +33,7 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
         return JNI_ERR;
     }
 
-    jclass cls = (*env)->FindClass(env, "com/horsege/ndkmultidirtest/Model2");
+    jclass cls = (*env)->FindClass(env, "com/horsege/ndkmultidirtest/Model3");
     if (cls == NULL) {
         return JNI_ERR;
     }
