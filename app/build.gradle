@@ -11,6 +11,16 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    externalNativeBuild {
+        ndkBuild {
+            path = 'src/main/jni/Android.mk'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'jnilibs'
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
