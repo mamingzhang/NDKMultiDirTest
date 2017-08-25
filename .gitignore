@@ -41,3 +41,4 @@ freeline.py
 
 #NDK
 .externalNativeBuild/
+obj/
