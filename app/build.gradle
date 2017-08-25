@@ -11,15 +11,23 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        externalNativeBuild {
+            ndkBuild {
+                arguments 'NDK_DEBUG=1'
+            }
+        }
+
         ndk {
             abiFilters "armeabi"
         }
     }
+
     externalNativeBuild {
         ndkBuild {
             path = 'src/main/jni/Android.mk'
         }
     }
+
     sourceSets {
         main {
             jniLibs.srcDir 'jnilibs'
