@@ -38,3 +38,6 @@ main/build.gradle.model.bak.new.new
 #freeline
 freeline/
 freeline.py
+
+#NDK
+.externalNativeBuild/
