@@ -19,7 +19,7 @@
 #include <android/log.h>
 
 jstring getModelName(JNIEnv *env, jobject obj) {
-    return (*env)->NewStringUTF(env, "Model-2");
+    return (*env)->NewStringUTF(env, "Model-3");
 }
 
 static JNINativeMethod NativeMethods[] = {
