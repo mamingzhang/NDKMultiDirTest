@@ -31,11 +31,12 @@ android {
     sourceSets {
         main {
             jniLibs.srcDir 'jnilibs'
-            //jni.srcDirs = [] //disable automatic ndk-build call
+            jni.srcDirs = [] //disable automatic ndk-build call
         }
     }
     buildTypes {
         debug {
+            debuggable true
             jniDebuggable true
         }
         release {
