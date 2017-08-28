@@ -1,5 +1,6 @@
 package com.horsege.ndkmultidirtest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -12,17 +13,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ((TextView)findViewById(R.id.model1)).setText(new Model1().getModelName());
-        ((TextView)findViewById(R.id.model2)).setText(new Model2().getModelName());
-
-        findViewById(R.id.model3).setVisibility(View.GONE);
-
-        findViewById(R.id.opBtn).setOnClickListener(this);
+        findViewById(R.id.ndkBtn).setOnClickListener(this);
+        findViewById(R.id.cmakeBtn).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        findViewById(R.id.model3).setVisibility(View.VISIBLE);
-        ((TextView)findViewById(R.id.model3)).setText(new Model3().getModelName());
+        Intent intent = new Intent();
+
+        switch (view.getId()) {
+            case R.id.ndkBtn:
+                intent.setClass(getBaseContext(), NDKActivity.class);
+                break;
+            case R.id.cmakeBtn:
+                intent.setClass(getBaseContext(), CMakeActivity.class);
+                break;
+        }
+
+        startActivity(intent);
     }
 }

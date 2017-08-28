@@ -4,25 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.horsege.ndkmultidirtest.MainActivity">
+    tools:context="com.horsege.ndkmultidirtest.CMakeActivity">
 
-    <Button
-        android:id="@+id/ndkBtn"
+    <TextView
+        android:id="@+id/model4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NDKBuildTest"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/cmakeBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="CMakeTest"
-        app:layout_constraintBottom_toTopOf="@id/ndkBtn"
-        app:layout_constraintLeft_toLeftOf="@id/ndkBtn" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Model4" />
 
 </android.support.constraint.ConstraintLayout>
