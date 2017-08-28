@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+/**
+ * 调试配置选项参考：http://www.jianshu.com/p/2690c9964110
+ */
 public class NDKActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
