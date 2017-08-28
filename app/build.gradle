@@ -16,10 +16,10 @@ android {
 //                arguments 'NDK_DEBUG=1'
 //            }
 //        }
-//
-//        ndk {
-//            abiFilters "armeabi"
-//        }
+
+        ndk {
+            abiFilters "armeabi"
+        }
     }
 
     externalNativeBuild {
